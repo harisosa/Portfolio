@@ -1,4 +1,4 @@
-export * from "./Hero";
+export * from "./hero";
 export * from "./About";
 export * from "./Skill";
 export * from "./Journey";

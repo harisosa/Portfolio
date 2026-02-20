@@ -13,6 +13,7 @@ export const MobileNavbar: React.FC = () => {
         <motion.div
             className="flex 
             w-full 
+            h-[48px]
             items-center 
             justify-between px-5 py-4 md:hidden
             bg-black/55

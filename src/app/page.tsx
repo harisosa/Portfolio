@@ -1,12 +1,18 @@
 import React from "react";
 import { Footer } from "@/components/layout";
-import { Hero, Skill, About, Projects, Journey, Testimoni, Faq, Contact } from "@/components/sections";
+import { Skill, About, Projects, Journey, Testimoni, Faq, Contact, Hero } from "@/sections";
+import { Marquee } from "@/features/marquee";
+import { MARQUEE_LOGOS } from "@/constants";
+
+
 
 
 const Page: React.FC = () => {
+  
   return (
     <main className="w-full bg-[#06080b] text-white">
       <Hero />
+      <Marquee items={MARQUEE_LOGOS} />
       <About />
       <Skill />
       <Projects />
