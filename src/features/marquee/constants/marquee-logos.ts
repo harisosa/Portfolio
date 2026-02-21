@@ -1,4 +1,4 @@
-import type { MarqueeModel } from "@/types/marquee";
+import type { MarqueeModel } from "@/features/marquee/type";
 
 import Amazon from "@/../public/images/amazon.svg";
 import Docker from "@/../public/images/docker.svg";

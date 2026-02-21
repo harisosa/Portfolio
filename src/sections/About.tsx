@@ -5,11 +5,10 @@ import Image, { StaticImageData } from 'next/image';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
-import { aboutFeatures, aboutSocials } from '@/constants/about';
-import { aboutMotion } from './motion';
-import SocialIconButton from './SocialIconButton';
-import FeatureCard from './FeatureCard';
+import { aboutFeatures, aboutSocials } from '@/features/about/constants/about';
 import { Section } from '@/components/layout';
+import { aboutMotion } from '@/features/about/motion';
+import { FeatureCard, SocialIconButton } from '@/features/about/components';
 
 export type AboutSectionProps = {
   imageSrc: StaticImageData;

@@ -3,10 +3,10 @@
 import * as React from 'react';
 import { motion } from 'framer-motion';
 import type { FeatureItem } from '@/types';
-import { aboutMotion } from './motion';
+import { aboutMotion } from '../motion';
 import Image from 'next/image';
 
-const FeatureCard: React.FC<FeatureItem> = ({ title, description, icon }) => {
+export const FeatureCard: React.FC<FeatureItem> = ({ title, description, icon }) => {
   return (
     <motion.div variants={aboutMotion.item} className="min-w-0 h-47.5">
       <motion.div
@@ -48,5 +48,3 @@ const FeatureCard: React.FC<FeatureItem> = ({ title, description, icon }) => {
     </motion.div>
   );
 };
-
-export default FeatureCard;

@@ -4,7 +4,7 @@ import * as React from 'react';
 import { Button } from '@/components/ui/button';
 import type { SocialItem } from '@/types';
 
-const SocialIconButton: React.FC<SocialItem> = ({ label, href, icon: Icon }) => {
+export const SocialIconButton: React.FC<SocialItem> = ({ label, href, icon: Icon }) => {
   return (
     <Button
       asChild
@@ -18,5 +18,3 @@ const SocialIconButton: React.FC<SocialItem> = ({ label, href, icon: Icon }) => 
     </Button>
   );
 };
-
-export default SocialIconButton;

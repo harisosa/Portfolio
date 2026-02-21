@@ -3,8 +3,8 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import type { MarqueeModel } from "@/features/marquee/type";
 import { MarqueeItem } from "./MarqueeItem";
-import type { MarqueeModel } from "@/types/marquee";
 
 type MarqueeProps = {
   items: MarqueeModel[];

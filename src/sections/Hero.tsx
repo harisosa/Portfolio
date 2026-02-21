@@ -4,8 +4,11 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Section } from "@/components/layout/Section";
-import { HeroBackground } from "./HeroBackground";
-import { fadeUp, fadeUpFast, cardIn } from "./motion";
+import { HeroBackground } from "../features/hero/components/HeroBackground";
+import { cardIn, fadeUp, fadeUpFast } from "@/features/hero/motion";
+import { MotionButton } from "@/components/ui/motion-button";
+import MailIcon from '@/../public/icons/mail.svg'
+
 
 export const Hero: React.FC = () => {
 
@@ -46,21 +49,7 @@ export const Hero: React.FC = () => {
             polished, performance-optimized, and deliver a consistent experience across all platforms.
           </motion.p>
 
-          <motion.button
-            {...fadeUp(0.18, 12)}
-            whileHover={{ y: -1 }}
-            whileTap={{ scale: 0.98 }}
-            className="mt-10 
-            inline-flex 
-            w-full
-            h-12 lg:w-52 items-center justify-center 
-             bg-[#13a4b6]
-             text-md font-semibold
-              text-white shadow-[0_18px_40px_rgba(19,164,182,0.22)]"
-          >
-            <Image src="/icons/mail.svg" alt="Mail icon" width={16} height={16} className="mr-2" />
-            Hire Me
-          </motion.button>
+        <MotionButton icon={MailIcon} title="Hire Me" />
         </div>
 
         <div className="flex w-full items-start justify-center md:w-[42%] md:justify-end">
