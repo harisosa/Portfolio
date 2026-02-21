@@ -36,10 +36,10 @@ export const FeatureCard: React.FC<FeatureItem> = ({ title, description, icon })
           </motion.div>
 
           <div className="space-y-2">
-            <h3 className="text-sm font-semibold tracking-tight text-neutral-25 md:text-base">
+            <h3 className="text-xl font-semibold tracking-tight text-neutral-25 md:text-base">
               {title}
             </h3>
-            <p className="text-xs leading-relaxed text-neutral-300/70 md:text-sm">
+            <p className="text-md leading-relaxed text-neutral-300/70 md:text-sm">
               {description}
             </p>
           </div>

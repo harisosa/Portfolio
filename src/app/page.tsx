@@ -1,6 +1,6 @@
 import React from "react";
 import { Footer } from "@/components/layout";
-import { About, Projects, Journey, Testimoni, Faq, Contact, Hero, Tools } from "@/sections";
+import { About, Projects, Journey, Testimoni, Faq, Contact, Hero, Tools, Skills } from "@/sections";
 import aboutImage from '@/../public/images/about.svg';
 import { MARQUEE_LOGOS } from "@/features/marquee/constants";
 import { Marquee } from "@/features/marquee/comnponents";
@@ -14,6 +14,7 @@ const Page: React.FC = () => {
       <Marquee items={MARQUEE_LOGOS} className="mt-24.25" />
       <About  imageSrc={aboutImage} />
       <Tools />
+      <Skills />
       <Projects />
       <Journey />
       <Testimoni />

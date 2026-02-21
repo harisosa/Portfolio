@@ -22,9 +22,7 @@ export const ToolItem: React.FC<Tool> = ({
           <Image
             src={icon}
             alt={name}
-            width={20}
-            height={20}
-            className="object-contain"
+            className="object-contain w-15 h-15"
           />
           <span className="text-sm text-white/80">
             {name}

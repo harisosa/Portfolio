@@ -49,7 +49,7 @@ export const Hero: React.FC = () => {
             polished, performance-optimized, and deliver a consistent experience across all platforms.
           </motion.p>
 
-        <MotionButton icon={MailIcon} title="Hire Me" />
+        <MotionButton icon={MailIcon} title="Hire Me" className="lg:w-52" />
         </div>
 
         <div className="flex w-full items-start justify-center md:w-[42%] md:justify-end">

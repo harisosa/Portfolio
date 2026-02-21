@@ -62,8 +62,8 @@ export const About: React.FC<AboutSectionProps> = ({ imageSrc, imageAlt = 'About
           </motion.div>
 
           {/* Body */}
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-[360px_1fr] md:gap-12 lg:h-128.25">
-            <motion.div variants={aboutMotion.item} className="w-full">
+          <div className="flex flex-col flex-wrap gap-10.25 lg:h-128.25">
+            <motion.div variants={aboutMotion.item} className="lg:w-113.25">
               <div className="relative overflow-hidden rounded-md">
                 <div className="relative aspect-4/3 w-full lg:w-113.25">
                   <Image
@@ -97,7 +97,7 @@ export const About: React.FC<AboutSectionProps> = ({ imageSrc, imageAlt = 'About
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
-              className="grid grid-cols-1 gap-x-12 gap-y-10 sm:grid-cols-2 sm:gap-y-12"
+              className="grid grid-cols-1 gap-x-12 gap-y-10 sm:grid-cols-2 sm:gap-y-12 lg:max-w-176.5"
             >
               {aboutFeatures.map((f) => (
                 <FeatureCard key={f.title} {...f} />
