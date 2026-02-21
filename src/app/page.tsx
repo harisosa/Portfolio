@@ -4,7 +4,7 @@ import { Skill, About, Projects, Journey, Testimoni, Faq, Contact, Hero } from "
 import { Marquee } from "@/features/marquee";
 import { MARQUEE_LOGOS } from "@/constants";
 
-
+import aboutImage from '@/../public/images/about.svg';
 
 
 const Page: React.FC = () => {
@@ -12,8 +12,8 @@ const Page: React.FC = () => {
   return (
     <main className="w-full bg-[#06080b] text-white">
       <Hero />
-      <Marquee items={MARQUEE_LOGOS} />
-      <About />
+      <Marquee items={MARQUEE_LOGOS} className="mt-24.25" />
+      <About  imageSrc={aboutImage} />
       <Skill />
       <Projects />
       <Journey />

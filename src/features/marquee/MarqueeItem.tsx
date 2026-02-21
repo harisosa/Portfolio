@@ -2,7 +2,7 @@
 
 import Image, { type StaticImageData } from "next/image";
 import * as React from "react";
-import { cn } from "@/../lib/utils";
+import { cn } from "@/lib/utils";
 
 type MarqueeItemProps = {
   src: StaticImageData;

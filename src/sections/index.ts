@@ -1,5 +1,5 @@
 export * from "./hero";
-export * from "./About";
+export * from "./about";
 export * from "./Skill";
 export * from "./Journey";
 export * from "./Projects";

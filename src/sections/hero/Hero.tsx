@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Section } from "@/components/layout/Section";
 import { HeroBackground } from "./HeroBackground";
-import { fadeUp, fadeUpFast, cardIn } from "./hero.motion";
+import { fadeUp, fadeUpFast, cardIn } from "./motion";
 
 export const Hero: React.FC = () => {
 
@@ -13,12 +13,14 @@ export const Hero: React.FC = () => {
     <Section
       id="hero"
       className="relative overflow-hidden bg-black"
-      containerClassName="relative z-10"
+      containerClassName="relative z-10 "
       isHero
     >
       <HeroBackground />
 
-      <div className="relative flex min-h-180 flex-col-reverse items-start justify-center gap-10 md:flex-row md:items-center">
+      <div className="relative flex min-h-180 flex-col-reverse items-start justify-center gap-10 md:flex-row md:items-center
+      ps-5 pe-2.75
+      ">
         <div className="w-full md:w-[58%] md:pr-10">
           <motion.p
             {...fadeUpFast(0, 10)}

@@ -16,7 +16,7 @@ export const Section: React.FC<SectionProps> = ({
   children,
 }) => {
   return (
-    <section id={id} className={`relative w-full ${!isHero ? "py-16 sm:py-20 md:py-24 lg:py-28" : ""} ${className} `}>
+    <section id={id} className={`relative w-full ${!isHero ? "py-16 sm:py-20 md:py-24 lg:py-20" : ""} ${className} `}>
       <Container className={containerClassName}>{children}</Container>
     </section>
   );

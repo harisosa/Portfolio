@@ -13,7 +13,7 @@ export const Container: React.FC<ContainerProps> = ({ className = "", children }
         sm:px-6 
         md:px-8
         lg:px-12
-        xl:px-35
+        xl:px-30
         ${className}
       `}
     >
