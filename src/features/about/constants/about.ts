@@ -8,7 +8,8 @@ import Code from "@/../public/icons/code.svg";
 import Web from "@/../public/icons/web.svg";
 import ComponentBased from "@/../public/icons/components-line.svg";
 import Mobile from "@/../public/icons/mobile.svg";
-import type { FeatureItem, SocialItem } from '@/types';
+import { FeatureItem, SocialItem } from '../type';
+
 
 export const aboutSocials: SocialItem[] = [
   { label: 'Facebook', href: '#', icon: Facebook },

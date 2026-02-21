@@ -2,9 +2,9 @@
 
 import * as React from 'react';
 import { motion } from 'framer-motion';
-import type { FeatureItem } from '@/types';
 import { aboutMotion } from '../motion';
 import Image from 'next/image';
+import { FeatureItem } from '../type';
 
 export const FeatureCard: React.FC<FeatureItem> = ({ title, description, icon }) => {
   return (

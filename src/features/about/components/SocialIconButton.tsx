@@ -2,7 +2,8 @@
 
 import * as React from 'react';
 import { Button } from '@/components/ui/button';
-import type { SocialItem } from '@/types';
+import { SocialItem } from '../type';
+
 
 export const SocialIconButton: React.FC<SocialItem> = ({ label, href, icon: Icon }) => {
   return (
