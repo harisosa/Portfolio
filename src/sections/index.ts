@@ -3,7 +3,7 @@ export * from "./About";
 export * from './Tools';
 export * from "./Skills";
 export * from "./Journey";
-export * from "./Projects";
+export * from "./Project";
 export * from "./Testimoni";
 export * from "./Faq";
 export * from "./Contact";

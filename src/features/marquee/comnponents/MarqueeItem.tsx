@@ -29,11 +29,9 @@ export const MarqueeItem: React.FC<MarqueeItemProps> = ({
         alt={alt}
         className={cn(
           "h-full w-auto object-contain select-none",
-          // semua logo jadi putih
           "brightness-0 invert opacity-90"
         )}
         draggable={false}
-        // height clamp ala contoh kamu
         style={{ height: "clamp(2.13rem, 3.97vw, 3rem)" }}
       />
     </div>

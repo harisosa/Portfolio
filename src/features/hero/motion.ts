@@ -1,6 +1,6 @@
 import type { MotionProps, Transition } from "framer-motion";
 
-const heroEase = [0.22, 1, 0.36, 1] as const; // ✅ tuple 4 angka (BezierDefinition)
+const heroEase = [0.22, 1, 0.36, 1] as const;
 
 const makeTransition = (delay: number, duration: number): Transition => ({
   duration,
