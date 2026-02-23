@@ -1,59 +1,15 @@
-"use client"
+"use client";
 
-import { useEffect, useMemo, useRef, useState } from "react"
-import { JourneyCard } from "./JourneyCard"
-import { JOURNEY_ITEMS } from "../constants"
-import { Button } from "@/components/ui/button"
-
-const EPS = 2
+import * as React from "react";
+import { JourneyCard } from "./JourneyCard";
+import { JOURNEY_ITEMS } from "../constants";
+import { CarouselNav, useScrollCarousel } from "@/features/carousel";
 
 export const JourneyCarousel: React.FC = () => {
-  const scrollRef = useRef<HTMLDivElement>(null)
-  const [canPrev, setCanPrev] = useState(false)
-  const [canNext, setCanNext] = useState(true)
-
-  const updateNavState = () => {
-    const el = scrollRef.current
-    if (!el) return
-
-    const max = Math.max(0, el.scrollWidth - el.clientWidth)
-    const left = el.scrollLeft
-
-    setCanPrev(left > EPS)
-    setCanNext(left < max - EPS)
-  }
-
-  const scrollByPage = (dir: "left" | "right") => {
-    const el = scrollRef.current
-    if (!el) return
-
-    const width = el.clientWidth
-    el.scrollBy({
-      left: dir === "left" ? -width : width,
-      behavior: "smooth"
-    })
-  }
-
-  useEffect(() => {
-    const el = scrollRef.current
-    if (!el) return
-
-    updateNavState()
-
-    const onScroll = () => updateNavState()
-    el.addEventListener("scroll", onScroll, { passive: true })
-
-    const ro = new ResizeObserver(() => updateNavState())
-    ro.observe(el)
-
-    return () => {
-      el.removeEventListener("scroll", onScroll)
-      ro.disconnect()
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
-
-  const items = useMemo(() => JOURNEY_ITEMS, [])
+  const { scrollRef, canPrev, canNext, scrollByPage } = useScrollCarousel({
+    eps: 2,
+    pageMode: "full",
+  });
 
   return (
     <>
@@ -81,20 +37,13 @@ export const JourneyCarousel: React.FC = () => {
         ))}
       </div>
 
-      <div className="flex items-center gap-3 pt-6">
-        <Button 
-          onClick={() => scrollByPage("left")}
-          className="border rounded-none px-4 py-2 text-md w-29.5 h-12"
-          disabled={!canPrev}>
-          Prev
-        </Button>
-        <Button 
-        onClick={() => scrollByPage("right")}
-        className="border rounded-none px-4 py-2 text-md w-29.5 h-12"
-          disabled={!canNext}>
-          Next
-        </Button>
-      </div>
+      <CarouselNav
+        className="pt-6"
+        canPrev={canPrev}
+        canNext={canNext}
+        onPrev={() => scrollByPage("left")}
+        onNext={() => scrollByPage("right")}
+      />
     </>
-  )
-}
+  );
+};

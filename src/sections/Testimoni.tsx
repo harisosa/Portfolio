@@ -7,7 +7,7 @@ import * as React from "react";
 export const Testimoni: React.FC = () => {
   return (
     <Section id="testimoni">
-      <div className="mx-auto w-full max-w-6xl">
+      <div className="w-full">
         <div className="text-center">
           <h2 className="text-3xl font-semibold tracking-tight text-white">
             Trusted Voices
