@@ -36,4 +36,40 @@ export const FAQ_ITEMS: FaqItem[] = [
       "I’m open to discussing part-time roles depending on scope and timeline. Feel free to reach out with the details of your project.",
     avatarUrl: "/icons/profile.svg",
   },
+
+  {
+    id: "6",
+    question: "How fast can you deliver a project?",
+    answer:
+      "It depends on scope, but I usually ship in milestones: a clickable MVP first, then iterate on polish. You’ll get visible progress early (not a “big bang” at the end).",
+    avatarUrl: "/icons/profile.svg",
+  },
+  {
+    id: "7",
+    question: "Do you care about performance and SEO, or just visuals?",
+    answer:
+      "Both. I’ll optimize images, split bundles, avoid layout shifts, and make sure the page stays fast and indexable—without compromising the design.",
+    avatarUrl: "/icons/profile.svg",
+  },
+  {
+    id: "8",
+    question: "Can you make the UI match Figma exactly (spacing, typography, rhythm)?",
+    answer:
+      "Yes. I work with a consistent spacing system, align baselines, and keep components token-driven so the UI stays precise and scalable across breakpoints.",
+    avatarUrl: "/icons/profile.svg",
+  },
+  {
+    id: "9",
+    question: "What’s your approach to building reusable components?",
+    answer:
+      "I build small, composable pieces first (Button, Card, Section), then layer feature components on top. It stays clean, testable, and easy to iterate.",
+    avatarUrl: "/icons/profile.svg",
+  },
+  {
+    id: "10",
+    question: "How do you handle messy requirements or scope changes?",
+    answer:
+      "I clarify the goal, lock a minimal success criteria, and keep changes behind small iterations. That way, scope evolves without breaking timelines—or the codebase.",
+    avatarUrl: "/icons/profile.svg",
+  },
 ]
