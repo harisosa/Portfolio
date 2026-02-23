@@ -5,10 +5,12 @@ import Image, { StaticImageData } from 'next/image';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
-import { aboutFeatures, aboutSocials } from '@/features/about/constants/about';
+import { aboutFeatures } from '@/features/about/constants/about';
 import { Section } from '@/components/layout';
 import { aboutMotion } from '@/features/about/motion';
-import { FeatureCard, SocialIconButton } from '@/features/about/components';
+import { FeatureCard } from '@/features/about/components';
+import { SocialMedia } from '@/features/social-media/components';
+import { SOCIAL_MEDIA } from '@/features/social-media/constants';
 
 export type AboutSectionProps = {
   imageSrc: StaticImageData;
@@ -50,9 +52,7 @@ export const About: React.FC<AboutSectionProps> = ({ imageSrc, imageAlt = 'About
               </Button>
 
               <div className="flex items-center gap-2.5">
-                {aboutSocials.map((s) => (
-                  <SocialIconButton key={s.label} {...s} />
-                ))}
+                  <SocialMedia socials={SOCIAL_MEDIA} />
               </div>
             </motion.div>
           </div>
@@ -85,9 +85,7 @@ export const About: React.FC<AboutSectionProps> = ({ imageSrc, imageAlt = 'About
                 </Button>
 
                 <div className="flex items-center gap-2">
-                  {aboutSocials.map((s) => (
-                    <SocialIconButton key={s.label} {...s} />
-                  ))}
+                  <SocialMedia socials={SOCIAL_MEDIA} />
                 </div>
               </div>
             </motion.div>

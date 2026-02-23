@@ -1,22 +1,10 @@
-import {
-  Facebook,
-  Instagram,
-  Linkedin,
-  Music2,
-} from 'lucide-react';
 import Code from "@/../public/icons/code.svg";
 import Web from "@/../public/icons/web.svg";
 import ComponentBased from "@/../public/icons/components-line.svg";
 import Mobile from "@/../public/icons/mobile.svg";
-import { FeatureItem, SocialItem } from '../type';
+import { FeatureItem,  } from '../type';
 
 
-export const aboutSocials: SocialItem[] = [
-  { label: 'Facebook', href: '#', icon: Facebook },
-  { label: 'Instagram', href: '#', icon: Instagram },
-  { label: 'LinkedIn', href: '#', icon: Linkedin },
-  { label: 'TikTok', href: '#', icon: Music2 },
-];
 
 export const aboutFeatures: FeatureItem[] = [
   {

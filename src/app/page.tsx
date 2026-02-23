@@ -1,5 +1,4 @@
 import React from "react";
-import { Footer } from "@/components/layout";
 import { About, Project, Journey, Testimoni, Faq, Contact, Hero, Tools, Skills } from "@/sections";
 import aboutImage from '@/../public/images/about.svg';
 import { MARQUEE_LOGOS } from "@/features/marquee/constants";
@@ -20,7 +19,6 @@ const Page: React.FC = () => {
       <Testimoni />
       <Faq />
       <Contact />
-      <Footer />
     </main>
   );
 };
