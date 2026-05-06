@@ -1,1 +1,0 @@
-export type SkillRow = { label: string };

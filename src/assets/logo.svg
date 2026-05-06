@@ -1,0 +1,17 @@
+<svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+  <!-- background -->
+  <rect 
+    x="0.5" y="0.5" 
+    width="27" height="27" 
+    rx="5" 
+    fill="rgba(115, 215, 255, 0.18)" 
+    stroke="rgba(115, 215, 255, 0.22)" 
+  />
+
+  <!-- H -->
+  <g fill="#73d7ff">
+    <rect x="8.5" y="7" width="2" height="14" rx="0.8"/>
+    <rect x="17.5" y="7" width="2" height="14" rx="0.8"/>
+    <rect x="8.5" y="13" width="11" height="2" rx="0.8"/>
+  </g>
+</svg>
